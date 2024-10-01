@@ -1,165 +1,72 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        h2 {
-            font-size: 1.5em;
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .cta-button {
-            background-color: #ff5722;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            font-size: 1.2em;
-            cursor: pointer;
-            border-radius: 5px;
-            margin: 20px 0;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #e64a19;
-        }
-        .benefits {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 40px;
-        }
-        .benefit {
-            background-color: white;
-            padding: 20px;
-            width: 30%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .benefit h3 {
-            color: #4CAF50;
-        }
-        .testimonials {
-            margin: 40px 0;
-            text-align: center;
-        }
-        .testimonials p {
-            font-style: italic;
-            color: #666;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .footer-links {
-            margin: 10px 0;
-            color: #bbb;
-        }
-        form {
-            margin: 20px 0;
-        }
-        input[type="email"] {
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 300px;
-        }
-        input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 1em;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-left: 10px;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        @media (max-width: 768px) {
-            .benefits {
-                flex-direction: column;
-            }
-            .benefit {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-        }
-    </style>
+    <title>App Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Votre Solution Parfaite pour [Problème]</h1>
-    <h2>Une solution simple, rapide et efficace pour [résoudre un problème spécifique]</h2>
-</header>
-
-<div class="container">
-    <h2>Profitez de notre offre dès aujourd'hui</h2>
-    <button class="cta-button">Essayez Gratuitement Maintenant</button>
-
-    <section class="benefits">
-        <div class="benefit">
-            <h3>Avantage 1</h3>
-            <p>Explication du premier avantage que votre produit/service offre.</p>
+<div class="hero">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav__inner">
+        <div class="nav__logo">SPARKS</div>
+        <div class="nav__item">About</div>
+        <div class="nav__item">Features</div>
+        <div class="nav__item">Support</div>
+      </div>
+    </nav>
+    <div class="hero__inner">
+      <div class="hero__info">
+        <h1>Let your sparks of joy <span>fly.</span></h1>
+        <h2>Life tips and advice to get you going, no matter how you're feeling.</h2><img class="download" src="https://assets.codepen.io/567707/badge-ios-download.png" alt="Download Button"/><img class="download" src="https://assets.codepen.io/567707/badge-android-download.png" alt="Download Button"/>
+      </div>
+      <div class="hero__mockups">
+        <div class="screen"><img src="https://assets.codepen.io/567707/mockup-iphone.png"/>
+          <div class="screen__inner">
+            <div class="screen__header logo">Sparks</div>
+            <div class="screen__middle bg-red">
+              <p class="question">Hi Ash, how are you today?</p>
+              <ul class="choices">
+                <li>Happy</li>
+                <li>Optimistic</li>
+                <li>Motivated</li>
+                <li>Neutral</li>
+                <li>Demotivated</li>
+                <li>Sad</li>
+                <li>Jaded</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="benefit">
-            <h3>Avantage 2</h3>
-            <p>Explication du deuxième avantage pour renforcer l'intérêt.</p>
+        <div class="screen"><img src="https://assets.codepen.io/567707/mockup-iphone.png"/>
+          <div class="screen__inner">
+            <div class="screen__header logo">Sparks</div>
+            <div class="screen__middle bg-yellow">
+              <p class="question">So you are feeling sad today?</p>
+              <p class="subheader">62 resources found.</p>
+              <div class="bg-purple">
+                <ul class="items">
+                  <li>8 Quick Actions</li>
+                  <li>15 Articles</li>
+                  <li>25 Music Playlists</li>
+                  <li>5 Podcast Episodes</li>
+                  <li>9 Videos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="benefit">
-            <h3>Avantage 3</h3>
-            <p>Dernier avantage clé pour captiver l'attention du visiteur.</p>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <h2>Témoignages de nos utilisateurs</h2>
-        <p>"Ce service a changé ma vie. Je le recommande vivement!" - Jean Dupont</p>
-        <p>"Simple, efficace et abordable. Rien à redire." - Marie Leroy</p>
-    </section>
-
-    <section class="cta-form">
-        <h2>Inscrivez-vous pour rester informé</h2>
-        <form>
-            <input type="email" placeholder="Entrez votre email">
-            <input type="submit" value="S'inscrire">
-        </form>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 Votre Société. Tous droits réservés.</p>
-    <div class="footer-links">
-        <a href="#" style="color: #bbb;">Politique de confidentialité</a> | 
-        <a href="#" style="color: #bbb;">Conditions d'utilisation</a>
+      </div>
     </div>
-</footer>
-
+  </div>
+</div>
+<div class="more-info">
+  <div class="image"><img src="https://assets.codepen.io/567707/palette-speaknow.png" alt="Taylor Swift album"/></div>
+  <p>Part of the <a href="https://codepen.io/collection/XPxJmz">UI Designs inspired by Taylor Swift Album Covers</a> collection. This is <em>Speak Now (2010)</em>.</p>
+</div>
 </body>
 </html>
