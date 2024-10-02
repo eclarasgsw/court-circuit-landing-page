@@ -201,6 +201,40 @@ p.lead {
     color: #998a9b;
 }
 
+/* Style Mailchimp messages*/
+/* Style for the success message */
+#mce-success-response {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text color */
+    border: 1px solid #c3e6cb; /* Green border */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Helvetica, Arial, sans-serif';
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Style for the error message */
+#mce-error-response {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text color */
+    border: 1px solid #f5c6cb; /* Red border */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Helvetica, Arial, sans-serif';
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Additional customization if needed */
+.response {
+    max-width: 60%; /* Limit the width to match form */
+    margin: 0 auto; /* Center the messages */
+}
+
+
 @media (max-width:767px) {
     h1 {
         font-size: 40px;
