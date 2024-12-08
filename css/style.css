@@ -88,12 +88,6 @@ h5 {
 .hero-background-image {
   width: 100%; /* Set width for the div */
   height: auto; /* Set height to make the div visible */
-  /*background-image: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)
-    ),
-    url("../images/producer.jpg");*/
   background-image: url("../images/producer.jpg");
   background-size: cover; /* Ensure the image covers the entire div */
   background-position: center; /* Center the background image */
