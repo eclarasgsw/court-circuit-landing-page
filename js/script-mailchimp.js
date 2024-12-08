@@ -6,7 +6,8 @@
     * Locale: DE
     */
     $.extend($.validator.messages, {
-    required: "Dieses Feld ist ein Pflichtfeld.",
+    /*required: "Dieses Feld ist ein Pflichtfeld.",*/
+    required: "Bitte Feld ausfüllen",
     maxlength: $.validator.format("Geben Sie bitte maximal {0} Zeichen ein."),
     minlength: $.validator.format("Geben Sie bitte mindestens {0} Zeichen ein."),
     rangelength: $.validator.format("Geben Sie bitte mindestens {0} und maximal {1} Zeichen ein."),
